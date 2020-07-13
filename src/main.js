@@ -4,7 +4,8 @@ import './assets/fonts/iconfont.css'
 import {
   MyButton,
   MyDialog,
-  MyInput
+  MyInput,
+  MySwitch
 } from './package'
 
 Vue.config.productionTip = false
@@ -12,6 +13,7 @@ Vue.config.productionTip = false
 Vue.component(MyButton.name, MyButton)
 Vue.component(MyDialog.name, MyDialog)
 Vue.component(MyInput.name, MyInput)
+Vue.component(MySwitch.name, MySwitch)
 
 new Vue({
   render: h => h(App)
