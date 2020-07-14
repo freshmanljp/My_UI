@@ -5,7 +5,9 @@ import {
   MyButton,
   MyDialog,
   MyInput,
-  MySwitch
+  MySwitch,
+  MyRadio,
+  MyRadioGroup
 } from './package'
 
 Vue.config.productionTip = false
@@ -14,6 +16,8 @@ Vue.component(MyButton.name, MyButton)
 Vue.component(MyDialog.name, MyDialog)
 Vue.component(MyInput.name, MyInput)
 Vue.component(MySwitch.name, MySwitch)
+Vue.component(MyRadio.name, MyRadio)
+Vue.component(MyRadioGroup.name, MyRadioGroup)
 
 new Vue({
   render: h => h(App)
