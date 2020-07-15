@@ -7,7 +7,9 @@ import {
   MyInput,
   MySwitch,
   MyRadio,
-  MyRadioGroup
+  MyRadioGroup,
+  MyCheckBox,
+  MyCheckBoxGroup
 } from './package'
 
 Vue.config.productionTip = false
@@ -18,6 +20,8 @@ Vue.component(MyInput.name, MyInput)
 Vue.component(MySwitch.name, MySwitch)
 Vue.component(MyRadio.name, MyRadio)
 Vue.component(MyRadioGroup.name, MyRadioGroup)
+Vue.component(MyCheckBox.name, MyCheckBox)
+Vue.component(MyCheckBoxGroup.name, MyCheckBoxGroup)
 
 new Vue({
   render: h => h(App)

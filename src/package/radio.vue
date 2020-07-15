@@ -23,7 +23,11 @@ export default {
       type: [String, Boolean, Number],
       required: true
     },
-    value: null,
+    // value获取父组件v-model传来的值
+    value: {
+      type: Boolean,
+      default: false
+    },
     name: {
       type: String,
       default: ''
