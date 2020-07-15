@@ -17,6 +17,8 @@
   </label>
 </template>
 <script>
+// 设计思想就是，单个复选框，绑定到布尔值，set的value自动为布尔值
+// 多个复选框，绑定到同一个数组，set的value为设置的value值
 export default {
   name: 'MyCheckBox',
   props: {

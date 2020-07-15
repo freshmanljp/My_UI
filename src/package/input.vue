@@ -61,6 +61,14 @@ export default {
       default: ''
     }
   },
+  inject: {
+    form: {
+      default: ''
+    },
+    formItem: {
+      default: ''
+    }
+  },
   data () {
     return {
       isPwShow: false
@@ -69,7 +77,12 @@ export default {
   methods: {
     // 双向绑定
     handleInput (e) {
+      // 触发值修改
       this.$emit('input', e.target.value)
+      // 触发值验证
+      if (this.form.isValidate) {
+        this.formItem.$emit('validate')
+      }
     },
     handleClear () {
       this.$emit('input', '')

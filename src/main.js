@@ -9,7 +9,9 @@ import {
   MyRadio,
   MyRadioGroup,
   MyCheckBox,
-  MyCheckBoxGroup
+  MyCheckBoxGroup,
+  MyForm,
+  MyFormItem
 } from './package'
 
 Vue.config.productionTip = false
@@ -22,6 +24,8 @@ Vue.component(MyRadio.name, MyRadio)
 Vue.component(MyRadioGroup.name, MyRadioGroup)
 Vue.component(MyCheckBox.name, MyCheckBox)
 Vue.component(MyCheckBoxGroup.name, MyCheckBoxGroup)
+Vue.component(MyForm.name, MyForm)
+Vue.component(MyFormItem.name, MyFormItem)
 
 new Vue({
   render: h => h(App)
