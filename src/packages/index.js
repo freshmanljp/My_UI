@@ -31,6 +31,7 @@ const install = (Vue) => {
   })
 }
 
+// 若有全局Vue，则自动安装，不需要调用use方法了
 // if (typeof window !== 'undefined' && window.Vue) {
 //   install(window.Vue)
 // }

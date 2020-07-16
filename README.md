@@ -1,24 +1,16 @@
-# my_ui
+# my_baby_ui
+已同名上线npm
 
-## Project setup
-```
-npm install
-```
++本项目作为vue组件封装的练习参考，包含button，dialog，input，switch，radio，checkbox，form，formitem八个常见组件的基本功能实现，包含样式（与el-ui的样式类似）
 
-### Compiles and hot-reloads for development
+## 安装组件库
 ```
-npm run serve
+npm install my_baby_ui
 ```
 
-### Compiles and minifies for production
+### 导入组件库
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+import myUI from 'my_baby_ui'
+Vue.use(myUI)
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

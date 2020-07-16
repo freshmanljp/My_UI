@@ -1,11 +1,16 @@
 {
-  "name": "my_ui",
+  "name": "my_baby_ui",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "dist/my_ui.umd.min.js",
+  "author": {
+    "name": "Kimming"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib src/packages/index.js"
   },
   "dependencies": {
     "async-validator": "^3.3.0",
